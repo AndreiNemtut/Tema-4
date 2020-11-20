@@ -2,17 +2,19 @@ package com.company;
 
 public enum Questions {
 
-    QUESTION_1("Which is the highest mountain in the world?", "K2", "Everest", "Makalu", "Cho Oyu", "Everest"),
-    QUESTION_2("How many planets are in the Solar System?", "7", "9", "8", "10", "8"),
-    QUESTION_3("How many corners does a square have?", "3", "5", "2", "4", "4") {
+    QUESTION_1("Who is the main singer of the Guns N' Roses band?", "Axl Rose", "Duff McKagan", "Slash", "Dizzy Reed", "Axl Rose"),
+    QUESTION_2("How many members were in the Queen band?", "3", "6", "4", "5", "4"),
+    QUESTION_3("From which country does the band ABBA come?", "Norway", "Sweden", "Germany", "USA", "Sweden"),
+    QUESTION_4("Which is the ABBA's best song?", "Fernando", "S.O.S.", "I Have A Dream", "Dancing Queen", "Dancing Queen"),
+    QUESTION_5("Which is the Queen's best album?", "Greatest Hits", "A Kind Of Magic", "The Works", "A Night At The Opera", "Greatest Hits") {
     };
 
-    private String question;
-    private String answer1;
-    private String answer2;
-    private String answer3;
-    private String answer4;
-    private String rightAnswer;
+    private final String question;
+    private final String answer1;
+    private final String answer2;
+    private final String answer3;
+    private final String answer4;
+    private final String rightAnswer;
 
     Questions(String question, String answer1, String answer2, String answer3, String answer4, String rightAnswer) {
         this.question = question;
@@ -50,4 +52,4 @@ public enum Questions {
     public String getRightAnswer() {
         return this.rightAnswer;
     }
-};
+}
